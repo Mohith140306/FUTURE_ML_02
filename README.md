@@ -199,11 +199,11 @@ support-ticket-classifier/
 │   └── customer_support_tickets.csv    # Raw dataset from Kaggle
 │
 ├── notebooks/
-│   └── ticket_classification.ipynb    # Jupyter Notebook for EDA & model training
+│   └── ticket_classification.ipynb    # Data cleaning & model training
 │
-├── app.py                             # Interactive CLI for ticket classification
-├── requirements.txt                   # List of Python dependencies (nltk, sklearn, etc.)
-└── README.md                          # Project documentation and setup guide
+├── app.py                             # Interactive CLI classification tool
+├── requirements.txt                   # Project dependencies
+└── README.md                          # Project documentation
 
 🚀 Getting Started
 1️⃣ Clone the repository
