@@ -196,9 +196,10 @@ support-ticket-classifier/
 │
 ├── customer_support_tickets.csv
 ├── ticket_classification.ipynb
-├── SupportTicketClassification.py
+├── app.py
 ├── requirements.txt
 └── README.md
+
 🚀 Getting Started
 1️⃣ Clone the repository
 git clone https://github.com/Mohith140306/FUTURE_ML_02.git
@@ -220,11 +221,11 @@ Output:
   'Priority': 'High'
 }
 💼 Business Impact
-Problem	Solution	Impact
-Manual sorting	Automatic ML classification	Saves support team time
-No urgency visibility	Priority tagging	Faster response
-Slow ticket routing	Hybrid refinement	Higher accuracy
-Growing ticket volume	Scalable ML pipeline	Handles large workloads
+Problem	                                     Solution	                            Impact
+Manual sorting                          Automatic ML classification	        Saves support team time
+No urgency visibility                   Priority tagging	                Faster response                                                                   
+Slow ticket routing	                Hybrid refinement	                Higher accuracy
+Growing ticket volume	                Scalable ML pipeline	                Handles large workloads 
 🔮 Future Improvements
 
 Replace TF-IDF with Transformer embeddings (BERT)
