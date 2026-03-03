@@ -285,6 +285,6 @@ TF-IDF
 Random Forest
 ## Author -
 
-     lalit shinde 
+     Mohith Dappadi 
 
-*Built as an ML Internship Portfolio Project*
+*BB.Tech AIML | Machine Learning Enthusiast*
