@@ -287,4 +287,4 @@ Random Forest
 
      Mohith Dappadi 
 
-*BB.Tech AIML | Machine Learning Enthusiast*
+*B.Tech AIML | Machine Learning Enthusiast*
