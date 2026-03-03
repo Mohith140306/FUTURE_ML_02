@@ -48,39 +48,40 @@ General Query
 
 🏗️ System Architecture
 Raw Ticket Text
-        │
-        ▼
-┌─────────────────────────┐
-│   Text Preprocessing    │
-│ lowercase → remove      │
-│ punctuation → stopwords │
-│ → lemmatization         │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│     TF-IDF Vectorizer   │
-│ max_features = 2000     │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Random Forest Classifier│
-│ class_weight=balanced   │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│  Hybrid Rule Refinement │
-│  (Billing keyword check)│
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│   Priority Assignment   │
-│   (Keyword-based logic) │
-└────────────┬────────────┘
-             ▼
+              │
+              ▼
+┌───────────────────────────┐
+│     Text Preprocessing    │
+│ lowercase → remove        │
+│ punctuation → stopwords   │
+│ → lemmatization           │
+└──────────────┬────────────┘
+               │
+               ▼
+┌───────────────────────────┐
+│     TF-IDF Vectorizer     │
+│    max_features = 2000    │
+└──────────────┬────────────┘
+               │
+               ▼
+┌───────────────────────────┐
+│ Random Forest Classifier  │
+│  class_weight = balanced  │
+└──────────────┬────────────┘
+               │
+               ▼
+┌───────────────────────────┐
+│   Hybrid Rule Refinement  │
+│  (Billing keyword check)  │
+└──────────────┬────────────┘
+               │
+               ▼
+┌───────────────────────────┐
+│    Priority Assignment    │
+│   (Keyword-based logic)   │
+└──────────────┬────────────┘
+               │
+               ▼
       { category, priority }
 🧠 Methodology
 Step 1 — Text Preprocessing
@@ -194,11 +195,15 @@ Model Accuracy: 0.90
 📁 Project Structure
 support-ticket-classifier/
 │
-├── customer_support_tickets.csv
-├── ticket_classification.ipynb
-├── app.py
-├── requirements.txt
-└── README.md
+├── data/
+│   └── customer_support_tickets.csv    # Raw dataset from Kaggle
+│
+├── notebooks/
+│   └── ticket_classification.ipynb    # Jupyter Notebook for EDA & model training
+│
+├── app.py                             # Interactive CLI for ticket classification
+├── requirements.txt                   # List of Python dependencies (nltk, sklearn, etc.)
+└── README.md                          # Project documentation and setup guide
 
 🚀 Getting Started
 1️⃣ Clone the repository
